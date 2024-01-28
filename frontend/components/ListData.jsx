@@ -5,8 +5,11 @@ const ListData = () => {
     useEffect( () => {
         const fetchData = async () => {
             try{
-                const response = await import('../jsondata.json');
-                setData(response.default);
+                // const response = await import('../jsondata.json');
+                // setData(response.default);
+                const response = await fetch('http://localhost:5000/api/data');
+                const json = await response.json();
+                setData(json);
             } catch (error) {
                 console.log(error);
             }
