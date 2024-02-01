@@ -13,3 +13,11 @@
     border: 20px solid green;
 }
 
+.card-with-graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  
+

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Component } from 'react';
 import CustomCard from './CustomCard';
+import GraphComponent from './GraphComponent';
 import './ListData.css';
 
 const ListData = () => {
@@ -22,7 +23,22 @@ const ListData = () => {
     return(
         <div>
             <h2>ListData :</h2>
-            <div className="card-container">
+            <GraphComponent data={data} />
+            {/* <div className="card-container">
+                {data.map((obj, index) => (
+                <div key={index} className="card-with-graph">
+                    <CustomCard
+                    photo={obj.photo}
+                    title={obj.title}
+                    description={obj.description}
+                    published={obj.published}
+                    country={obj.country}
+                    url={obj.url}
+                    />
+                </div>
+                ))}
+            </div> */}
+            {/* <div className="card-container">
                 <ul>
                 {data.map((obj, index) => (
                     <CustomCard
@@ -46,7 +62,7 @@ const ListData = () => {
                     // </li>
                 ))}
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }
