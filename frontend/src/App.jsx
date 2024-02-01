@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ListData from '../components/ListData'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import CustomNavbar from '../components/CustomNavbar';
+
 
 function App() {
 
@@ -30,6 +33,7 @@ function App() {
     //   </p>
     // </>
     <div>
+      <CustomNavbar />
       <h2>App.js Header</h2>
       <ListData />
     </div>
