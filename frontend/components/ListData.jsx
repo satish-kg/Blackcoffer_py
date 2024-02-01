@@ -25,11 +25,10 @@ const ListData = () => {
             <div className="card-container">
                 <ul>
                 {data.map((obj, index) => (
-
                     <CustomCard
                         key={index}
+                        className="custom-card"
                         photo={"https://picsum.photos/200/300"} // SAMPLE IMAGE TO LOOK GOOD
-                        // photo={obj.photo} // Replace with the actual property name in your data
                         title={obj.title}
                         description={obj.description}
                         published={obj.published}

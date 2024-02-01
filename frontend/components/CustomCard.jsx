@@ -4,18 +4,20 @@ import { Card } from 'react-bootstrap';
 
 function CustomCard({ photo, title, description, url, published, country }) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={photo} alt={title} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-        <Card.Text>Published: {published}</Card.Text>
-        <Card.Text>Country: {country}</Card.Text>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-          Read More
-        </a>
-      </Card.Body>
+    <div>
+      <Card style={{ width: '20rem' }}>
+        <Card.Img variant="top" src={photo} alt={title} />
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{description}</Card.Text>
+          <Card.Text>Published: {published}</Card.Text>
+          <Card.Text>Country: {country}</Card.Text>
+          <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Read More
+          </a>
+        </Card.Body>
     </Card>
+    </div>
   );
 }
 

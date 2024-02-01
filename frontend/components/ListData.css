@@ -1,5 +1,15 @@
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    gap: 16px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap between cards */
+    justify-content: space-around; /* Adjust alignment as needed */
+    border: 2px solid red;
 }
+
+.custom-card {
+    flex: 1 0 300px; /* Adjust the width as needed */
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin-bottom: 16px; /* Adjust the margin as needed */
+    border: 20px solid green;
+}
+
