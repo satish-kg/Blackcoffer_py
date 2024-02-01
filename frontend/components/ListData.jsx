@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Component } from 'react';
+import CustomCard from './CustomCard';
 
 const ListData = () => {
     const [data, setData] = useState([]);
@@ -23,15 +24,26 @@ const ListData = () => {
             <div>
                 <ul>
                 {data.map((obj, index) => (
-                    <li key={index}>
-                    <p>{obj.title && <strong>{index+1}. {obj.title}</strong>}</p>
-                    <p>{obj.published && <span>Published : {obj.published}</span>}</p>
-                    <p>{obj.country && <span>Country : {obj.country}</span>}</p>
-                    <p>{obj.sector && <span>Sector : {obj.sector}</span>}</p>
-                    <p>{obj.topic && <span>Topic : {obj.topic}</span>}</p>
-                    <p>{obj.insight && <span>Insight : {obj.insight}</span>}</p>
-                    <p>{obj.url && <a href={obj.url}>{obj.url}</a>}</p>
-                    </li>
+
+                    <CustomCard
+                        key={index}
+                        photo={"https://picsum.photos/200/300"}
+                        // photo={obj.photo} // Replace with the actual property name in your data
+                        title={obj.title}
+                        description={obj.description}
+                        published={obj.published}
+                        country={obj.country}
+                        url={obj.url}
+                    />
+                    // <li key={index}>
+                    // <p>{obj.title && <strong>{index+1}. {obj.title}</strong>}</p>
+                    // <p>{obj.published && <span>Published : {obj.published}</span>}</p>
+                    // <p>{obj.country && <span>Country : {obj.country}</span>}</p>
+                    // <p>{obj.sector && <span>Sector : {obj.sector}</span>}</p>
+                    // <p>{obj.topic && <span>Topic : {obj.topic}</span>}</p>
+                    // <p>{obj.insight && <span>Insight : {obj.insight}</span>}</p>
+                    // <p>{obj.url && <a href={obj.url}>{obj.url}</a>}</p>
+                    // </li>
                 ))}
                 </ul>
             </div>
