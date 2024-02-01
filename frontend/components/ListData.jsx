@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Component } from 'react';
 import CustomCard from './CustomCard';
+import './ListData.css';
 
 const ListData = () => {
     const [data, setData] = useState([]);
@@ -21,13 +22,13 @@ const ListData = () => {
     return(
         <div>
             <h2>ListData :</h2>
-            <div>
+            <div className="card-container">
                 <ul>
                 {data.map((obj, index) => (
 
                     <CustomCard
                         key={index}
-                        photo={"https://picsum.photos/200/300"}
+                        photo={"https://picsum.photos/200/300"} // SAMPLE IMAGE TO LOOK GOOD
                         // photo={obj.photo} // Replace with the actual property name in your data
                         title={obj.title}
                         description={obj.description}
