@@ -6,7 +6,8 @@
     position: fixed;
     overflow-y: auto;
     float: left;
-    height: 85vh;
+    height: 100vh;
+    display: inline-block;
     margin-right: auto;
     border: 20px solid cyan;
     background-color: #f2f2f2
