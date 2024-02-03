@@ -6,6 +6,7 @@ import ListData from '../components/ListData'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from '../components/CustomNavbar';
 import CardDisplayContainer from '../components/CardDisplayContainer'
+import Sidebar from '../components/SIdebar'
 
 
 function App() {
@@ -35,9 +36,10 @@ function App() {
     // </>
     <div>
       <CustomNavbar />
-      <h2>App.js Header</h2>
+      {/* <h2>App.js Header</h2> */}
+      <Sidebar />
       <CardDisplayContainer />
-      <ListData />
+      {/* <ListData /> */}
     </div>
   )
 }

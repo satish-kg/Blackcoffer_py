@@ -1,0 +1,13 @@
+.sidebar-container{
+    /* margin-left: auto; */
+    width: 20%;
+    top: 8%;
+    left: 0;
+    position: fixed;
+    overflow-y: auto;
+    float: left;
+    height: 85vh;
+    margin-right: auto;
+    border: 20px solid cyan;
+    background-color: #f2f2f2
+}
