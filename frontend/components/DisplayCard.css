@@ -1,0 +1,14 @@
+.display-card-container{
+    /* display: flex; */
+    border: 2px solid red;
+    height: 300px;
+    width: 35%;
+}
+.card-body{
+    height: 60%;
+    border: 2px solid green;
+}
+.card-header{
+    height: 30%;
+    border: 2px solid blue;
+}

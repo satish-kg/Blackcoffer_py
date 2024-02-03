@@ -1,0 +1,10 @@
+.cards-container{
+    margin-left: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap between cards */
+    justify-content: space-around; /* Adjust alignment as needed */
+    border: 2px solid red;
+
+}
